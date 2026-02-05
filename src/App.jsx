@@ -1,28 +1,16 @@
-function App(){
-  return(
+import Login, {Profile,Setting, Userkey}  from "./UserComponent";
+
+function App() {
+  return (
     <>
-    <Fruit/>
-    <h1>Firt Component</h1>
-     <Colors/>
+      <h1>Importing and exporting Component</h1>
+      <Login/>
+      <Profile/>
+      <Setting/>
+      <h1>{Userkey}</h1>
     </>
-  )
+
+  );
 }
-
-
-function Fruit(){
-  return(
-    <h1>Apple</h1>
-   
-  )
-}
-
-
-
-function Colors(){
-  return(
-    <h1>Colors</h1>
-  )
-}
-
 
 export default App;
