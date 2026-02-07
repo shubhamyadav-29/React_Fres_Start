@@ -1,7 +1,28 @@
-
-
+import { useState } from "react";
+import Counter from "./Counter"
 function App() {
   
+const [fruit,setFruit] = useState("Apple");
+const handleFruit = ()=>{
+  if (fruit == "Apple"){
+    setFruit("Banana")
+  }
+  else if (fruit == "Banana"){
+    setFruit("Mango")
+  }
+  else{
+    setFruit("Apple")
+  }
+}
+// const [count,setCount] = useState("Apple");
+
+// let fruit = "Apple"
+
+// const handleFruits=()=>{
+//   fruit="Banana";
+//   console.log(fruit)
+// }
+
 // const name=undefined
 // const userObj={
 //   name:"shubham",
@@ -32,24 +53,40 @@ function App() {
 // }
 // }
 
-function callFun(){
-  alert("The button is clicked ")
-}
+// function callFun(){
+//   alert("The button is clicked ")
+// }
 
-const fruit=(name)=>{
-  alert(name)
-}
+// const fruit=(name)=>{
+//   alert(name)
+// }
+
   return(
  <>
 
 <div>
+  <h1>State in React Js</h1>
+  <h1>{fruit}</h1>
+  <button onClick={handleFruit}>Change fruit name</button>
+  <Counter/>
+</div>
+
+
+{/* <div>
+  <h1>State in React Js</h1>
+  <h1>{fruit}</h1>
+  <button onClick={handleFruits}>Chnage Fruit name</button>
+</div> */}
+
+
+{/* <div>
   <h1>Click event and fucntion call</h1>
   <button onClick={callFun}>Click me </button>
   <br /> <br/>
   <button onClick={()=>fruit('apple')}>Click Me</button>
    <br /> <br/>
    <button onClick={()=>fruit('banana')}>Click Me</button>
-</div>
+</div> */}
 
 
 {/* <div>
