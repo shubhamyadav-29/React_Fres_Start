@@ -5,6 +5,19 @@ function App() {
   
 const [display,setDisplay] = useState(true)
 
+function handlecondi(){
+  if(display ==="true"){
+
+    {<User/>}
+setDisplay(!display)
+  }
+  else if(display=== "false"){
+    <h1>No User Component </h1>
+    setDisplay(!display)
+  }
+
+}
+
 // const [fruit,setFruit] = useState("Apple");
 // const handleFruit = ()=>{
 //   if (fruit == "Apple"){
@@ -78,11 +91,12 @@ const [display,setDisplay] = useState(true)
     display? <h1>Shubham Yadav</h1>:null
 
   } */}
+   
 
-  <button onClick={()=>setDisplay(!display)}>Toggle</button>
-   {
+  <button onClick={()=>handlecondi}>Toggle</button>
+   {/* {
     display?<User/>:null
-   }
+   } */}
 
 </div>
 
