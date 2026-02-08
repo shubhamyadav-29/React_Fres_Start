@@ -1,22 +1,27 @@
 import { useState } from "react";
 // import Counter from "./Counter"
-import User from "./User"
+// import User from "./User"
 function App() {
-  
-const [display,setDisplay] = useState(true)
+  const [count ,setCount]= useState(0)
 
-function handlecondi(){
-  if(display ==="true"){
 
-    {<User/>}
-setDisplay(!display)
-  }
-  else if(display=== "false"){
-    <h1>No User Component </h1>
-    setDisplay(!display)
-  }
 
-}
+// const [display,setDisplay] = useState(true)
+
+
+
+// function handlecondi(){
+//   if(display ==="true"){
+
+//     {<User/>}
+// setDisplay(!display)
+//   }
+//   else if(display=== "false"){
+//     <h1>No User Component </h1>
+//     setDisplay(!display)
+//   }
+
+// }
 
 // const [fruit,setFruit] = useState("Apple");
 // const handleFruit = ()=>{
@@ -87,13 +92,27 @@ setDisplay(!display)
 <div>
   <h1>Toggle in React js</h1>
 
+<button onClick={()=>setCount(count+1)}>click me</button>
+{
+  count==0?<h1>Con 0</h1>
+  :count==1?<h1>con 1</h1>
+  :count==2?<h1>con 2</h1>
+  :count==3?<h1>con 3</h1>
+  :count==4?<h1>con 4</h1>
+  :count==5?<h1>con 5</h1>:null
+}
+
+
+
+
   {/* {
     display? <h1>Shubham Yadav</h1>:null
 
   } */}
    
 
-  <button onClick={()=>handlecondi}>Toggle</button>
+  {/* <button onClick={()=>handlecondi}>Toggle</button> */}
+
    {/* {
     display?<User/>:null
    } */}
