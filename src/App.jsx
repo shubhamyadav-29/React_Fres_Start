@@ -1,6 +1,7 @@
 // import { useState } from "react";
 // import Counter from "./Counter"
 import User from "./User";
+import Collage from "./Collage";
 function App() {
   // let name="shubham"
   // let age=21
@@ -16,6 +17,8 @@ function App() {
     age: 20,
     email: "chandan@gmail.com",
   };
+
+  let  collageNames=['IET','DU','NIT','MIT']
 
   // const [count ,setCount]= useState(0)
 
@@ -98,9 +101,11 @@ function App() {
     <>
       <div>
         <h1>Props in React</h1>
+        <Collage names={collageNames} />
+
         {/* <User name={name} age={age} email={email} /> */}
         <User user={userObj} user2={userObj2} />
-        <User user={userObj2}  />
+        <User user={userObj2} />
       </div>
 
       <div>
