@@ -3,7 +3,7 @@ function Collage({names}){
  
     return(
         <div>
-            <h1>{names[0]}</h1>
+            <h1>{names}</h1>
         </div>
     )
 }

@@ -18,7 +18,7 @@ function App() {
     email: "chandan@gmail.com",
   };
 
-  // let  collageNames=['IET','DU','NIT','MIT']
+  let  collageNames=['IET','DU','NIT','MIT']
 
   // const [count ,setCount]= useState(0)
 
@@ -101,7 +101,10 @@ function App() {
     <>
       <div>
         <h1>Props in React</h1>
-        <Collage names={collageNames} />
+        <Collage names={collageNames[0]} />
+        <Collage names={collageNames[1]} />
+        <Collage names={collageNames[2]} />
+        <Collage names={collageNames[3]} />
 
         {/* <User name={name} age={age} email={email} /> */}
         <User user={userObj} user2={userObj2} />

@@ -1,4 +1,4 @@
-function User({ user }) {
+function User({ user, user2 }) {
   return (
     <div>
       <hr />
