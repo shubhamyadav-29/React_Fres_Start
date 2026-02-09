@@ -18,7 +18,7 @@ function App() {
     email: "chandan@gmail.com",
   };
 
-  let  collageNames=['IET','DU','NIT','MIT']
+  // let  collageNames=['IET','DU','NIT','MIT']
 
   // const [count ,setCount]= useState(0)
 
