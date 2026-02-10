@@ -1,7 +1,8 @@
-// import { useState } from "react";
+import { useState } from "react";
 // import Counter from "./Counter"
 import User from "./User";
 import Collage from "./Collage";
+import Student from "./Student";
 function App() {
   // let name="shubham"
   // let age=21
@@ -97,9 +98,16 @@ function App() {
   //   alert(name)
   // }
 
+const [student,setStudent]=useState()
+
+
   return (
     <>
       <div>
+       {student && <Student name={student}/>} 
+        <button onClick={()=>setStudent("bhasker")}>Update Student Name</button>
+        
+        
         <h1>Props in React</h1>
         <Collage names={collageNames[0]} />
         <Collage names={collageNames[1]} />
@@ -109,6 +117,8 @@ function App() {
         {/* <User name={name} age={age} email={email} /> */}
         <User user={userObj} user2={userObj2} />
         <User user={userObj2} />
+
+       
       </div>
 
       <div>
