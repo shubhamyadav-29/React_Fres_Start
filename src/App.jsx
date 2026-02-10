@@ -3,6 +3,7 @@ import { useState } from "react";
 import User from "./User";
 import Collage from "./Collage";
 import Student from "./Student";
+import Wrapper from "./Wrapper";
 function App() {
   // let name="shubham"
   // let age=21
@@ -19,7 +20,7 @@ function App() {
     email: "chandan@gmail.com",
   };
 
-  let  collageNames=['IET','DU','NIT','MIT']
+  let collageNames = ["IET", "DU", "NIT", "MIT"];
 
   // const [count ,setCount]= useState(0)
 
@@ -98,16 +99,16 @@ function App() {
   //   alert(name)
   // }
 
-const [student,setStudent]=useState()
-
+  const [student, setStudent] = useState();
 
   return (
     <>
       <div>
-       {student && <Student name={student}/>} 
-        <button onClick={()=>setStudent("bhasker")}>Update Student Name</button>
-        
-        
+        {student && <Student name={student} />}
+        <button onClick={() => setStudent("bhasker")}>
+          Update Student Name
+        </button>
+
         <h1>Props in React</h1>
         <Collage names={collageNames[0]} />
         <Collage names={collageNames[1]} />
@@ -115,10 +116,25 @@ const [student,setStudent]=useState()
         <Collage names={collageNames[3]} />
 
         {/* <User name={name} age={age} email={email} /> */}
-        <User user={userObj} user2={userObj2} />
-        <User user={userObj2} />
+        {/* <User user={userObj} />
+        <User user={userObj2} /> */}
 
-       
+        {/* <User name={"shubham"} />
+        <User name={"Rahul"} />
+        <User /> */}
+
+        <Wrapper>
+          <h1>Hello Everyone</h1>
+          <h2>Hello shubham</h2>
+        </Wrapper>
+        <Wrapper>
+          <h1>Hello Sir</h1>
+          <h2>Hello Student</h2>
+        </Wrapper>
+        <Wrapper>
+          <h1>Hello Teachers</h1>
+          <h2>Hello Girls</h2>
+        </Wrapper>
       </div>
 
       <div>
@@ -170,8 +186,20 @@ const [student,setStudent]=useState()
    <button onClick={()=>fruit('banana')}>Click Me</button>
 </div> */}
 
-
-</div>
+      {/* <div>
+  <h1>JSX with curly braces</h1>
+  <h1>{name?name:"user not found"}</h1>
+  <h1>{x+y}</h1>
+  <h1> {fruit()}</h1>
+  <h1> {sum(2,4)}</h1>
+  <h1> {operation(6,4,"-")}</h1>
+  <h1> {userObj.roll}</h1>
+  <h1> {arrObj[1]}</h1>
+  <br />
+  <input type="text" value={userObj.name} id='shubham'/>
+  <img src={path} alt="" />
+  
+</div> */}
     </>
   );
 }
