@@ -170,19 +170,7 @@ const [student,setStudent]=useState()
    <button onClick={()=>fruit('banana')}>Click Me</button>
 </div> */}
 
-      <div>
-  <h1>JSX with curly braces</h1>
-  <h1>{name?name:"user not found"}</h1>
-  <h1>{x+y}</h1>
-  <h1> {fruit()}</h1>
-  <h1> {sum(2,4)}</h1>
-  <h1> {operation(6,4,"-")}</h1>
-  <h1> {userObj.roll}</h1>
-  <h1> {arrObj[1]}</h1>
-  <br />
-  <input type="text" value={userObj.name} id='shubham'/>
-  <img src={path} alt="" />
-  
+
 </div>
     </>
   );
