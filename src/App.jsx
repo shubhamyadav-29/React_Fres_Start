@@ -170,7 +170,7 @@ const [student,setStudent]=useState()
    <button onClick={()=>fruit('banana')}>Click Me</button>
 </div> */}
 
-      {/* <div>
+      <div>
   <h1>JSX with curly braces</h1>
   <h1>{name?name:"user not found"}</h1>
   <h1>{x+y}</h1>
@@ -183,7 +183,7 @@ const [student,setStudent]=useState()
   <input type="text" value={userObj.name} id='shubham'/>
   <img src={path} alt="" />
   
-</div> */}
+</div>
     </>
   );
 }

@@ -1,5 +1,6 @@
 function User({ user, user2 }) {
   return (
+
     <div>
       <hr />
 
