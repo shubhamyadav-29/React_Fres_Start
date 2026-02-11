@@ -4,7 +4,10 @@ function Skills(){
     const [skills,setSkills]=useState([])
     const handleSkills=(event)=>{
       console.log(event.target.value, event.target.checked);
-   
+      if(event.target.checked){
+        setSkills([...skills,event.target.value])
+      }else{
+        setSkills([skills.filter((item)=>item!=event.target.value)])
       }
       
     }
