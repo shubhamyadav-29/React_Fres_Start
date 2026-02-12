@@ -1,15 +1,11 @@
-import { useState } from "react";
-import Skills from "./Skills";
-
-function App() {
-  const [name,setName] =useState('');
-  const [password,setPassword] = useState('');
-  const [email,setEmail] = useState('')
-  return <div>
-    <h1>Handle CheckBoxes in React</h1>
-    <Skills/>
-   
-  </div>;
+function App(){
+  return(
+    <div>
+      <h1>Handle Radio and DropDown</h1>
+      <h4>Select Gender</h4>
+      <input type="radio" name="gender" id="male"/>Male
+      <input type="radio" name="gender" id="female"/>Female
+    </div>
+  )
 }
-
-export default App;
+export default App
