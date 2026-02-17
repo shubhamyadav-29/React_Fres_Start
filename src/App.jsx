@@ -1,3 +1,5 @@
+import User from "./User";
+
 function App() {
   const userName = ["Shubham", "Anil", "Rajat"];
   const userData = [
@@ -19,74 +21,21 @@ function App() {
       email: "peter@test.com",
       id: 3,
     },
+      {
+      name: "Raj",
+      age: "21",
+      email: "peter@test.com",
+      id: 4,
+    },
   ];
   return (
     <div>
-      <h1>Loop in JSX with Map Function</h1>
-      <table border="1">
-        <thead>
-          <tr>
-            <td>Id</td>
-            <td>Name</td>
-            <td>Email</td>
-            <td>Age</td>
-          </tr>
-        </thead>
-        <tbody>
-          {userData.map((user) => (
-            <tr key={user.id}>
-              <td>{user.id}</td>
-              <td>{user.name}</td>
-              <td>{user.email}</td>
-              <td>{user.age}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-
-      <h1>Dummy Data</h1>
-      <table border="1">
-        <thead>
-          <tr>
-            <td>Id</td>
-            <td>Name</td>
-            <td>Email</td>
-            <td>Age</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Shubham</td>
-            <td>Shubham@test.com</td>
-            <td>21</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Shubham</td>
-            <td>Shubham@test.com</td>
-            <td>21</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Shubham</td>
-            <td>Shubham@test.com</td>
-            <td>21</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Shubham</td>
-            <td>Shubham@test.com</td>
-            <td>21</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Shubham</td>
-            <td>Shubham@test.com</td>
-            <td>21</td>
-          </tr>
-        </tbody>
-      </table>
+      <h1>Reuse Component in Loop</h1>
+      {userData.map((user) => (
+        <div key={user.id} >
+          <User user={user}/>
+        </div>
+      ))}
     </div>
   );
 }
