@@ -33,7 +33,7 @@ function App() {
       <h1>Reuse Component in Loop</h1>
       {userData.map((user) => (
         <div key={user.id} >
-          <User user={user}/>
+          <User data={user}/>
         </div>
       ))}
     </div>
